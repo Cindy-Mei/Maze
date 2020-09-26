@@ -5,7 +5,7 @@ using UnityEngine;
 public class WASD : MonoBehaviour
 {
     // Start is called before the first frame update
-    float speed = 1.25f;
+    float speed = 0.02f;
     void Start()
     {
         
@@ -14,13 +14,13 @@ public class WASD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
             transform.position += Vector3.up * speed;
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
             transform.position += Vector3.down * speed;
-        if (Input.GetKeyDown(KeyCode.A))
-            transform.position += Vector3.left * speed;
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.A))
             transform.position += Vector3.right * speed;
+        if (Input.GetKey(KeyCode.D))
+            transform.position += Vector3.left * speed;
     }
 }
