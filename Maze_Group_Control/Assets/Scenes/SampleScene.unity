@@ -1864,7 +1864,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " Press back space \n  to delate words. \n   Then enter code"
+  m_Text: " Press back space \n  to delete words. \n   Then enter code"
 --- !u!222 &1076159927
 CanvasRenderer:
   m_ObjectHideFlags: 0
