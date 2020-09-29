@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class check : MonoBehaviour
 {
-
+    public Transform myTransform;
     private string code = "0180";
     public InputField Input;
     public string answer;
@@ -21,7 +21,7 @@ public class check : MonoBehaviour
 
             if (answer == code)
             {
-                //door code here
+                myTransform.position += Vector3.left * 10;
 
             }
 
